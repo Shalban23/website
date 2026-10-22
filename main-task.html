@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Ruwudu:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            font-family: "DM Sans", sans-serif;
+        }
+
+        body {
+            background-color: rgb(4, 4, 33);
+            overflow-x: hidden;
+        }
+
+        .main {
+            margin: 100px;
+            margin-top: 60px;
+        }
+
+        .sub-main {
+            padding: 100px;
+            position: relative;
+        }
+
+        nav {
+
+            background-color:#1f2240;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            margin-bottom: 50px;
+            border-radius: 100px;
+            /* position: fixed; */
+
+
+        }
+
+        .span {
+            display: flex;
+            gap: 10px;
+            padding-top: 10px;
+
+
+        }
+
+        span {
+            color: rgb(177, 175, 175);
+
+        }
+
+        .inbox {
+            background-color: rgb(82, 77, 211);
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 50px;
+        }
+
+        .span span:hover {
+            color: white;
+            cursor: pointer;
+            border-bottom: 2px solid blue;
+
+        }
+
+        .inbox:hover {
+            background-color: rgb(26, 26, 77);
+            cursor: pointer;
+        }
+
+
+
+        .flexing {
+            display: flex;
+            padding-top: 20px;
+
+        }
+
+        .image {
+
+            margin-right: 30px;
+
+        }
+
+        .image img {
+
+            height: 400px;
+            width: 600px;
+            border-radius: 20px;
+
+        }
+
+        .sub h1 {
+            font-size: 1.5cm;
+            margin-bottom: 20px;
+        }
+
+        .sub p {
+            font-size: 20px;
+            margin-bottom: 40px;
+
+        }
+
+        .getwork span {
+            background-color: rgb(4, 4, 33);
+            border-radius: 50px;
+            padding: 10px;
+            font-weight: bold;
+            color: rgb(82, 77, 211);
+            border: 2px solid rgb(82, 77, 211);
+
+        }
+
+        .getwork span:hover {
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        table {
+            margin-top: 40px;
+
+        }
+
+        table th {
+            color: blue;
+            font-size: 1cm;
+            font-weight: 1000;
+        }
+
+        .image2 img {
+            height: 400px;
+            width: 600px;
+            border-radius: 10px;
+            border: 4px solid gray;
+            margin-right: 80px;
+            margin-top: 50px;
+        }
+        .iimg img{
+            height: 290px;
+            width: 290px;
+            border-radius: 10px;
+            border: 4px solid gray;
+            position: absolute;
+            right: 525px;
+            bottom: 95px;
+            
+
+        }
+        .state-card{
+            display: inline-flex;
+            background-color: #05071e;
+            gap: 25px;
+            position: absolute;
+            padding: 20px;
+            border-radius: 10px;
+            right:140px;
+            top: 70px;
+        }
+        .state-item{
+            
+            
+            text-align: center;
+            
+
+        }
+        .state-item p{
+            
+            font-size: 0.8rem;
+            color: #e8e7f7;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+        .state-item h3{
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #524dd3;
+                
+                line-height: 1;
+        }
+
+
+        .image200 img {
+            height: 400px;
+            width: 650px;
+        }
+        
+
+        .sub-main {
+            display: flex;
+            margin-top: 100px;
+            background-color: rgb(11, 11, 49);
+            padding-top: 60px;
+        }
+
+        .insidebox {
+            margin-right: 70px;
+        }
+
+        .insidebox h5 {
+            color: blue;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+        }
+
+        .insidebox h1 {
+            font-size: 1cm;
+            margin-bottom: 20px;
+        }
+
+        .insidebox li {
+            margin-left: 16px;
+            margin-bottom: 20px;
+        }
+
+        .insidebox p {
+            margin-bottom: 30px;
+            font-size: 20px;
+            color: rgb(177, 175, 175);
+
+        }
+
+        .insidebox ul {
+            margin-bottom: 70px;
+        }
+
+        .insidebox span {
+            background-color: blue;
+            border-radius: 50px;
+            padding: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: bold;
+            color: white;
+            /* margin-top: 20px; */
+
+
+
+        }
+
+        .insidebox span:hover {
+            cursor: pointer;
+            background-color: rgb(26, 26, 77);
+            /* transform: translateX(30px); */
+
+        }
+
+        /* ---------------------------- */
+
+        .sub-main2 {
+            display: flex;
+            margin-top: 0px;
+            margin: 100px;
+            margin-bottom: 0px;
+            /* background-color: rgb(11, 11, 49); */
+            /* padding-top: 0px; */
+            gap: 20px;
+            /* padding: 100px; */
+            /* padding-bottom: 0px; */
+        }
+
+        .image2 {
+            padding-top: 0px;
+        }
+
+        .insidebox2 h1 {
+            margin-bottom: 10px;
+            font-size: 1cm;
+        }
+
+        .insidebox2 p {
+            color: gray;
+            margin-bottom: 20px;
+            font-size: larger;
+        }
+
+        .insidebox2 dl {
+            font-size: larger;
+            margin-bottom: 40px;
+        }
+        dl dd{
+            margin-bottom: 20px;
+        }
+
+        .insidebox2 dt {
+            margin-top: 10px;
+            
+            font-size: x-large;
+        }
+
+        .in-span span {
+            
+            background-color: blue;
+            border-radius: 50px;
+            padding: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 80px;
+            
+
+        }
+        .in-span{
+            display: flex;
+            gap: 10px;
+        }
+        .in-span span:hover{
+            background-color: rgb(4, 4, 80);
+            border: 1px solid gray;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+        /* --------------------------- */
+
+
+
+        .center {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            /* margin-bottom: 40px; */
+
+        }
+
+        .inside-center {
+            font-size: 1cm;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background-color: rgb(1, 1, 69);
+            display: inline-block;
+            text-align: center;
+            padding: 30px;
+            margin: 10px;
+            height: 250px;
+            width: 25%;
+            flex-grow: 1;
+            border-radius: 20px;
+
+        }
+
+        .boxes {
+            padding: 100px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box h1{
+            
+
+            background-color: rgb(2, 2, 124);
+            
+            display: inline-block;
+            /* text-align: center; */
+            /* align-items: center; */
+            font-size: 1cm;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .box h2 {
+            text-align: center;
+            margin-top: 15px;
+
+        }
+
+        .box p {
+            color: rgb(177, 175, 175);
+            text-align: center;
+            margin-top: 15px;
+
+        }
+        .arrow{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .aroo:hover{
+            /* font-size: large; */
+            animation: arr 1s 1 normal;
+        }
+
+        @keyframes arr{
+            from{transform: translateX(0px);}
+            to{transform: translateX(10px);}
+        }
+
+        /* .box:hover {
+            cursor: pointer;
+        } */
+
+        .box h5 {
+            color: rgb(3, 3, 196);
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .box h2:hover,
+        h5:hover {
+            color: blue;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            border: 1px solid blue;
+            transform: translatey(-10px);
+        }
+
+        /* ----------------------------------------- */
+        .square {
+            padding: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 0px;
+        }
+
+        .square1 {
+            background-color: rgb(1, 1, 69);
+            display: inline-block;
+            padding: 30px;
+            margin: 10px;
+            height: 250px;
+            width: 25%;
+            flex-grow: 1;
+            border-radius: 20px;
+
+        }
+
+        .square1 h2 {
+            text-align: center;
+            margin-top: 15px;
+
+        }
+
+        .top-p {
+            color: rgb(177, 175, 175);
+            text-align: center;
+            margin-top: 15px;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+
+        }
+
+        .square1 h1 {
+            text-align: center;
+            margin-top: 15px;
+            color: blue;
+        }
+
+        .in-p {
+            color: rgb(177, 175, 175);
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .square1:hover {
+            border: 1px solid blue;
+            transform: translatey(-10px);
+        }
+
+        /* -------------------------------------- */
+
+
+
+        .box2 {
+            background-color: rgb(1, 1, 69);
+            padding: 40px;
+            text-align: center;
+            margin: 100px;
+            margin-top: 0px;
+            border-radius: 30px;
+        }
+
+        .box2 h3 {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 30px;
+            background-color: blue;
+            margin-top: 30px;
+        }
+
+        .box2 h2 {
+            margin-top: 10px;
+            font-size: 1cm;
+            margin-bottom: 20px;
+        }
+
+        .frame {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box2 p {
+            margin-top: 10px;
+        }
+
+        .box2 h3:hover {
+            cursor: pointer;
+            /* transform: translateY(-10px); */
+            background-color: rgb(6, 6, 83);
+            border: 2px solid gray;
+        }
+
+        .box5 {
+            background-color: rgb(1, 1, 69);
+            padding: 40px;
+            text-align: center;
+            margin: 300px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 30px;
+        }
+        .box5 h1{
+            background-color: rgb(2, 2, 124);
+            display: inline-block;
+            align-items: center;
+            font-size: 1cm;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .box5 h3 {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 30px;
+            background-color: blue;
+            margin-top: 30px;
+        }
+        .box5 h2 {
+            margin-top: 10px;
+            font-size: 1cm;
+            margin-bottom: 20px;
+        }
+        .frame2 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .box5 p {
+            margin-top: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            color: gray;
+        }
+        .box5 h3:hover {
+            cursor: pointer;
+            /* transform: translateY(-10px); */
+            background-color: rgb(6, 6, 83);
+            border: 2px solid gray;
+        }
+
+        .inside {
+            padding: 100px;
+            padding-top: 0px;
+        }
+
+        .Portfolio {
+            text-align: center;
+        }
+
+        .Portfolio h2 {
+            font-size: 1cm;
+            margin-bottom: 20px;
+        }
+
+        .Why-us {
+            text-align: center;
+        }
+
+        .Why-us h2 {
+            font-size: 1cm;
+            margin-bottom: 20px;
+
+        }
+
+        /* .Why-us p{
+
+        } */
+
+        .mini-box {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+
+        }
+
+        .mini-box h4 {
+            background-color: rgb(4, 4, 90);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 40px;
+            border: 1px solid gray;
+
+        }
+
+        .mini-box h4:hover {
+            background-color: blue;
+            cursor: pointer;
+            /* animation:top 1s infinite; */
+
+        }
+
+        /* @keyframes top {
+                from{transform: translateX(0px);}
+                to{transform: translatey(-2px); }
+        } */
+
+
+        .project {
+            display: flex;
+            padding: 100px;
+            flex-wrap: wrap;
+            padding-top: 0px;
+
+        }
+
+
+        .in-project {
+            /* border: 2px solid black; */
+            display: inline-block;
+            width: 420px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: rgb(4, 4, 90);
+            flex-grow: 1;
+
+
+
+        }
+
+        .image1 {
+            height: 250px;
+            background-image: url(web1.png);
+            background-size: cover;
+            width: 420px;
+            border-radius: 10px 10px 0px 0px;
+            /* border: 2px solid black; */
+            /* margin: 0px;
+            padding: 0px; */
+            position: relative;
+
+
+        }
+
+        .image20 {
+            height: 250px;
+            background-image: url(web20.png);
+            background-size: cover;
+            width: 420px;
+            border-radius: 10px 10px 0px 0px;
+            /* border: 2px solid black; */
+            /* margin: 0px;
+            padding: 0px; */
+            position: relative;
+
+        }
+
+        .image3 {
+            height: 250px;
+            background-image: url(web3.png);
+            background-size: cover;
+            width: 420px;
+            border-radius: 10px 10px 0px 0px;
+            /* border: 2px solid black; */
+            /* margin: 0px;
+            padding: 0px; */
+            position: relative;
+
+        }
+
+        .image4 {
+            height: 250px;
+            background-image: url(web4.png);
+            background-size: cover;
+            width: 420px;
+            border-radius: 10px 10px 0px 0px;
+            /* border: 2px solid black; */
+            /* margin: 0px;
+            padding: 0px; */
+            position: relative;
+
+        }
+
+        .image5 {
+            height: 250px;
+            background-image: url(web5.png);
+            background-size: cover;
+            width: 420px;
+            border-radius: 10px 10px 0px 0px;
+            /* border: 2px solid black; */
+            /* margin: 0px;
+            padding: 0px; */
+            position: relative;
+
+        }
+
+        .image6 {
+            height: 250px;
+            background-image: url(web6.png);
+            background-size: cover;
+            width: 420px;
+            border-radius: 10px 10px 0px 0px;
+            /* border: 2px solid black; */
+            /* margin: 0px;
+            padding: 0px; */
+            position: relative;
+
+        }
+
+
+        .sub-project {
+            padding: 20px;
+        }
+
+        .cart-price {
+            display: flex;
+            justify-content: space-between;
+
+            margin-bottom: 10px;
+            /* border-bottom: 2px solid black; */
+            /* padding: 20px; */
+        }
+
+        .chart {
+            background-color: blue;
+            padding: 5px;
+            border-radius: 20px;
+
+        }
+
+        .price h4 {
+            color: yellow;
+        }
+
+        .para3 h3 {
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .para3 p {
+            color: gainsboro;
+        }
+
+
+        .list {
+            display: inline;
+
+
+        }
+
+        .ule {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            /* display: flex; */
+            /* margin: 0px;
+            padding: 0px; */
+        }
+
+        .lie {
+            background-color: rgb(3, 1, 55);
+            display: inline;
+            /* margin: 10px; */
+            padding: 7px;
+            border-radius: 13px;
+            font-size: small;
+            border: 2px solid gray;
+            margin-top: 10px;
+
+        }
+
+        .lie:hover {
+            color: blue;
+        }
+
+        /* ---------ANIMATION----------------- */
+
+        .sub {
+            animation: right 1s 1 normal;
+        }
+        @keyframes right{
+            from{transform: translateX(-200px);}
+            to{transform: translateX(0px);}
+        }
+        .image{
+            animation: left 1s 1 normal;
+        }
+        @keyframes left{
+            from{transform: translateX(200px);}
+            to{transform: translateX(0px);}
+        }
+        .insidebox{
+            animation: right 1s 1 normal;
+        }
+        .image2{
+            animation: left 1s 1 normal;
+        }
+        .center{
+            animation: top 1s 1 normal;
+        }
+        @keyframes top{
+            from{transform: translateY(200px);}
+            to{transform: translateY(0px);}
+        }
+
+
+        
+       
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <h1>clarity</h1>
+            <div class="span">
+                <span>Home</span>
+                <span>About</span>
+                <span>Services</span>
+                <span>portfolio</span>
+                <span>Team</span>
+                <span>Dropdown</span>
+                <span>Contact</span>
+            </div>
+            <h4 class="inbox">Get Started</h4>
+        </nav>
+
+
+
+
+        <div class="flexing">
+
+            <div class="sub">
+
+                <h1>Transform Your Digital Presence</h1>
+                <p style="color: rgb(177, 175, 175);">We create innovative digital solutions that drive growth and
+                    elevate your brand. From web development
+                    to digital marketing, we're your partners in digital transformation.</p>
+
+
+
+
+                <div class="getwork">
+                    <span>Get started</span>
+                    <span>Our Work</span>
+                </div>
+                <table>
+                    <tr>
+                        <th>150</th>
+                        <th>95</th>
+                        <th>24</th>
+                    </tr>
+                    <tr>
+                        <td style="color: rgb(177, 175, 175);">Projects Completed</td>
+                        <td style="color: rgb(177, 175, 175);">Client Satisfaction</td>
+                        <td style="color: rgb(177, 175, 175);">Team Members</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="image">
+                <img src="main-img1.png" alt="image1">
+            </div>
+        </div>
+    </div>
+    <div class="sub-main">
+        <div class="insidebox">
+            <h5>Discover Our Story</h5>
+            <h1>Innovative Solutions for a Digital-First World</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            <ul>
+                <li>Excepteur sint occaecat cupidatat non proident.</li>
+                <li>Nemo enim ipsam voluptatem quia voluptas sit.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            </ul>
+            <span>Discover More</span>
+
+        </div>
+        <div class="image2">
+            <img src="main-img2.png" alt="image2">
+        </div>
+
+        <div class="iimg">
+            <img src="main-img4.png" alt="image4">
+        </div>
+
+        <div class="state-card">
+            <div class="state-item">
+                <h3>20+</h3>
+                <p>Years of Experience </p>
+            </div>
+            <div class="state-item">
+                <h3>500+</h3>
+                <p>Happy Clients</p>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="center">
+        <h2 class="inside-center">Services</h2>
+        <p style="color:rgb(177, 175, 175) ;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit</p>
+    </div>
+    <div class="boxes">
+        <div class="box">
+            <h1>🎨</h1>
+            <h2>Brand Identity Design</h2>
+            <p>Donec vel sapien augue integer urna vel turpis cursus porta aliquam ligula eget ultricies.</p>
+            <div class="arrow">
+                <h5>Learn More</h5>
+                <h5 class="aroo">→</h5>
+            </div>
+        </div>
+        <div class="box">
+            <h1>🧾</h1>
+            <h2>UI/UX Design</h2>
+            <p>Mauris blandit aliquet elit eget tincidunt nibh pulvinar rutrum tellus pellentesque eu.</p>
+            <div class="arrow">
+                <h5>Learn More</h5>
+                <h5 class="aroo">→</h5>
+            </div>
+        </div>
+        <div class="box">
+            <h1> 💻 </h1>
+            <h2>Web Development</h2>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+            <div class="arrow">
+                <h5>Learn More</h5>
+                <h5 class="aroo">→</h5>
+            </div>
+        </div>
+        <div class="box">
+            <h1>📱</h1>
+            <h2>Mobile App Design</h2>
+            <p>Sed porttitor lectus nibh donec sollicitudin molestie malesuada proin eget tortor risus.</p>
+            <div class="arrow">
+                <h5>Learn More</h5>
+                <h5 class="aroo">→</h5>
+            </div>
+        </div>
+        <div class="box">
+            <h1>📢</h1>
+            <h2>SEO Optimization</h2>
+            <p>Curabitur arcu erat accumsan id imperdiet et porttitor at sem pellentesque habitant morbi.</p>
+            <div class="arrow">
+                <h5>Learn More</h5>
+                <h5 class="aroo">→</h5>
+            </div>
+        </div>
+        <div class="box">
+            <h1>🔎︎</h1>
+            <h2>Digital Marketing</h2>
+            <p>Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.</p>
+            
+            <div class="arrow">
+                <h5>Learn More</h5>
+                <h5 class="aroo">→</h5>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="box2">
+        <h2>Ready to Transform Your Digital Presence?</h2>
+        <p>Let's discuss your project and create something amazing together</p>
+        <h3>Get Started Today</h3>
+    </div>
+
+    <div class="inside">
+
+        <div class="Portfolio">
+            <h2>Portfolio</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+
+        </div>
+        <div class="mini-box">
+            <h4>All Project</h4>
+            <h4>Web Design</h4>
+            <h4>Mobile Apps</h4>
+            <h4>Branding</h4>
+            <h4>UI/UX</h4>
+
+        </div>
+    </div>
+
+    <div class="project">
+
+        <div class="in-project">
+
+            <div class="image1">
+                <!-- <img src="image.png" alt="laptop image"> -->
+                <div></div>
+            </div>
+
+            <div class="sub-project">
+
+                <div class="cart-price">
+
+                    <div class="chart">
+                        <h5>WEB DESIGN</h5>
+                    </div>
+
+                    <div class="price">
+                        <h4>★ 4.8</h4>
+                    </div>
+
+                </div>
+
+                <div class="para3">
+                    <h3>Digital Innovation Platform</h3>
+                    <p>Cutting-edge performance with intel Core i9, 32GB RAM and a 1TB SSD in a sleek,Lightweight
+                        design.</p>
+                </div>
+
+                <div class="list">
+                    <ul class="ule">
+                        <li class="lie">React</li>
+                        <li class="lie">Node js</li>
+                        <li class="lie">AWS</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- second -->
+
+        <div class="in-project">
+
+            <div class="image20">
+                <!-- <img src="image.png" alt="laptop image"> -->
+                <div></div>
+            </div>
+
+            <div class="sub-project">
+
+                <div class="cart-price">
+
+                    <div class="chart">
+                        <h5>Mobile App</h5>
+                    </div>
+
+                    <div class="price">
+                        <h4>★ 4.9</h4>
+                    </div>
+
+                </div>
+
+                <div class="para3">
+                    <h3>Smart Productivity App</h3>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                </div>
+
+                <div class="list">
+                    <ul class="ule">
+                        <li class="lie">Flutter</li>
+                        <li class="lie">Firebase</li>
+                        <li class="lie">AI</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- third -->
+
+        <div class="in-project">
+
+            <div class="image3">
+                <!-- <img src="image.png" alt="laptop image"> -->
+                <div></div>
+            </div>
+
+            <div class="sub-project">
+
+                <div class="cart-price">
+
+                    <div class="chart">
+                        <h5>Branding</h5>
+                    </div>
+
+                    <div class="price">
+                        <h4>★ 5.0</h4>
+                    </div>
+
+                </div>
+
+                <div class="para3">
+                    <h3>Modern Brand Identity</h3>
+                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id.
+                    </p>
+                </div>
+
+                <div class="list">
+                    <ul class="ule">
+                        <li class="lie">Illustrator</li>
+                        <li class="lie">Figma</li>
+                        <li class="lie">Brand</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- fourth -->
+
+        <div class="in-project">
+
+            <div class="image4">
+                <!-- <img src="image.png" alt="laptop image"> -->
+                <div></div>
+            </div>
+
+            <div class="sub-project">
+
+                <div class="cart-price">
+
+                    <div class="chart">
+                        <h5>UI/UX</h5>
+                    </div>
+
+                    <div class="price">
+                        <h4>★ 4.7</h4>
+                    </div>
+
+                </div>
+
+                <div class="para3">
+                    <h3>SaaS Dashboard Design</h3>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div>
+
+                <div class="list">
+                    <ul class="ule">
+                        <li class="lie">Figma</li>
+                        <li class="lie">Prototyping</li>
+                        <li class="lie">UX</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- fifth -->
+
+        <div class="in-project">
+
+            <div class="image5">
+                <!-- <img src="image.png" alt="laptop image"> -->
+                <div></div>
+            </div>
+
+            <div class="sub-project">
+
+                <div class="cart-price">
+
+                    <div class="chart">
+                        <h5>E-commerce</h5>
+                    </div>
+
+                    <div class="price">
+                        <h4>★ 4.6</h4>
+                    </div>
+
+                </div>
+
+                <div class="para3">
+                    <h3>E-commerce Platform</h3>
+                    <p>Donec rutrum congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed.</p>
+                </div>
+
+                <div class="list">
+                    <ul class="ule">
+                        <li class="lie">Shopify</li>
+                        <li class="lie">React</li>
+                        <li class="lie">API</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- sixth -->
+
+        <div class="in-project">
+
+            <div class="image6">
+                <!-- <img src="image.png" alt="laptop image"> -->
+                <div></div>
+            </div>
+
+            <div class="sub-project">
+
+                <div class="cart-price">
+
+                    <div class="chart">
+                        <h5>Fintech</h5>
+                    </div>
+
+                    <div class="price">
+                        <h4>★ 4.8</h4>
+                    </div>
+
+                </div>
+
+                <div class="para3">
+                    <h3>Fintech Mobile Solution</h3>
+                    <p>Cras ultricies ligula sed magna dictum porta. Proin eget tortor risus. Sed porttitor lectus nibh.
+                    </p>
+                </div>
+
+                <div class="list">
+                    <ul class="ule">
+                        <li class="lie">Swift</li>
+                        <li class="lie">Kotlin</li>
+                        <li class="lie">Blockchain</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="box2">
+        <h2>Ready to start your next project?</h2>
+        <p>Let's work together to bring your digital vision to life</p>
+
+        <div class="frame">
+            <h3>Start a Projct</h3>
+            <h3>View All Work</h3>
+        </div>
+    </div>
+
+    <div class="Why-us">
+        <h2>Why Us</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+
+    </div>
+
+    <div class="square">
+        <div class="square1">
+            <!-- <h1>🎨</h1> -->
+            <h2>Creative Excellence</h2>
+            <p class="top-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+            <h1>95</h1>
+            <p class="in-p">% Client Satisfaction</p>
+        </div>
+        <div class="square1">
+            <h2>Proven Results</h2>
+            <p class="top-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat duis aute irure dolor in reprehenderit.</p>
+            <h1>200</h1>
+            <p class="in-p">% ROI Increase</p>
+        </div>
+        <div class="square1">
+            <h2>Expert Team</h2>
+            <p class="top-p">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum sed ut perspiciatis unde omnis.</p>
+            <h1>50</h1>
+            <p class="in-p">+ Awards Won</p>
+        </div>
+    </div>
+
+    <!-- --------------------------------- -->
+
+    <div class="sub-main2">
+
+        <div class="image200">
+            <img src="main-img3.png" alt="image2">
+        </div>
+        <div class="insidebox2">
+
+            <h1>Why Leading Brands Choose Us</h1>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                excepteur sint occaecat.</p>
+            <dl>
+                <dt>Strategic Thinking</dt>
+                <dd style="color: gray;">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+                    incididunt.</dd>
+                <dt>Data-Driven Approach</dt>
+                <dd style="color: gray;">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea.</dd>
+                <dt>24/7 Support</dt>
+                <dd style="color: gray;">Duis aute irure dolor in reprehenderit in voluptate velit.</dd>
+            </dl>
+            <div class="in-span">
+                <span>Start your project</span>
+                <span>view profile</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="Why-us">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- ----------------------------------------------------------------- -->
+
+    <div class="box5">
+        <h1>🚀</h1>
+        <h2>Ready to Join Our Mission?</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.e</p>
+
+        <div class="frame2">
+            <h3>View Open Roles</h3>
+            <h3>Learn Our Culture</h3>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+</body>
+
+</html>
